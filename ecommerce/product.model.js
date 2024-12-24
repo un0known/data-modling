@@ -22,12 +22,12 @@ const produstSchema = new mongoose.Schema( {
         default: 0
     },
     Category: {
-        type: mongoose.Schema.Type.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: "Category",
         required:true
     },
     owner: {
-        type: mongoose.Schema.Type.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: "User"
     }
 }, {timestamps: true})
